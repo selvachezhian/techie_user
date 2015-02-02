@@ -6,8 +6,8 @@ require 'techie_user/version'
 Gem::Specification.new do |spec|
   spec.name          = 'techie_user'
   spec.version       = TechieUser::VERSION
-  spec.authors       = ['Selva Chezhian']
-  spec.email         = ['selvachezhian.labam@gmail.com']
+  spec.authors       = ['Selva Chezhian', 'Elavarasu']
+  spec.email         = %w(selvachezhian.labam@gmail.com elavarasu.pandiyan@gmail.com)
   spec.summary       = %q{TODO: Write a short summary. Required.}
   spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ''
