@@ -26,11 +26,11 @@ module TechieUser
 
       def check_mandatory_params(options)
         raise ArgumentError, 'You should pass :source parameter in options' if options[:source].blank?
-        raise ArgumentError.new("Passed source #{options[:source]} is invalid.  Allowed sources are #{ALLOWED_SOURCES}.") unless source_valid?(options[:source])
+        raise ArgumentError.new("Passed source #{options[:source]} is invalid.  Allowed sources are #{TechieUser::ALLOWED_SOURCES}.") unless source_valid?(options[:source])
       end
 
       def source_valid?(source)
-        ALLOWED_SOURCES.include?(source.to_sym) ? true : false
+        TechieUser::ALLOWED_SOURCES.include?(source.to_sym) ? true : false
       end
 
     end # class << self
